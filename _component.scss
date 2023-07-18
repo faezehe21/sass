@@ -1,0 +1,208 @@
+
+
+ .hero {
+    @include column;
+    background-color:#F1F5F9; 
+ }
+ .hero > div {
+    width: 40%;
+   min-height:80vh;
+   position: relative;
+ 
+   > p {
+    font-size:1rem ;
+    font-weight: 400;
+    color:$light_text_color;
+    margin-bottom: $spacer * 2;
+   }
+   
+ }
+  .div-1{
+ @include button;
+ width: 176px;
+ height: 60px;
+ z-index: -1;
+
+ }
+//  .button-1 {
+//     z-index: 99;
+//  }
+
+.hero {
+    width: 100%;
+  min-height:90vh;
+    background-color: $light_bg;
+    position: relative;
+    &::after {
+        content:'';
+        background-image:url('./assets/about.png(1).webp') !important;
+        background-repeat: no-repeat;
+        display:block;
+        width: 60%;
+        min-height: 80vh;
+        background-size: contain;
+       
+
+        
+    }
+    &::before {
+        content: 'talents';
+        display:block;
+        width: 90%;
+        height: 30vh;
+        text-transform: uppercase;
+        color: rgb(0 0 0 / 9%);
+        font-size: 17vw;
+        font-weight: 700;
+        position: absolute;
+        bottom:-20vw;
+        left:5%;
+        right:5%;
+        margin-right: auto;
+        padding-left: 20px;
+      top:500px;
+    }
+    @include parent_width;
+
+ 
+     }
+     .div-2 {
+      min-height: 10vh;
+        position: absolute;
+        bottom:-20vw;
+        @include parent_width;
+      @include column-1;
+      @include middle;
+      @include mid-2;
+      width: 100%;
+      right:0;
+      left:0;
+      > p {
+        text-align: center;
+        color:$light_text_color;}
+      }
+      
+      
+    //  
+    //  .div-1{
+    //   @include button;
+    //   width: 176px;
+    //   height: 60px;
+    //   z-index: 1;
+     
+    //   }
+    
+//  .sec-1 {
+//     width: 33.33%;
+//     height: 300px;
+//     padding: $spacer*4 $spacer*3;
+//     position: absolute;
+//     left: 0;
+//    &::before {
+//     content:url('icons8-stacking-30.png');
+   
+       
+//    } 
+// }
+
+// .sec-2 {
+//   width: 33.33%;
+//   height: 300px;
+//   padding: $spacer*4 $spacer*3;
+//   position: absolute;
+//   left:30vw;
+//  &::before {
+//   content:url('icons8-radio-30.png');
+ 
+     
+//  } 
+// }
+// .pic-cont {
+//   @include  section;
+//   position: absolute;
+//   bottom: -30vw;
+//   position: relative;
+//   height: 80vh;
+// }
+.pic-cont {
+  @include section-1 ;
+  @include chart;
+  // @include grid;
+}
+.sec-1 {
+  padding: $spacer*4 $spacer*3;
+  &::before {
+    content: url('icons8-cube-64.png');
+  }
+  > p {
+    color:$light_text_color;
+    margin-bottom: $spacer * 4;
+  }
+}
+.sec-2 {
+  padding: $spacer*4 $spacer*3;
+  &::before {
+    content: url('icons8-radio-64.png');
+  }
+  > p {
+    color:$light_text_color;
+    margin-bottom: $spacer * 4;
+  }
+}
+.sec-3{
+  padding: $spacer*4 $spacer*3;
+  &::before {
+    content: url('icons8-cube2-64 (1).png');
+  }
+  > p {
+    color:$light_text_color;
+    margin-bottom: $spacer * 4;
+  }
+}
+.sec-4{
+  padding: $spacer*4 $spacer*3;
+  &::before {
+    content: url('icons8-trumpet-64.png');
+  }
+  > p {
+    color:$light_text_color;
+    margin-bottom: $spacer * 4;
+  }
+}
+.sec-5{
+  padding: $spacer*4 $spacer*3;
+  &::before {
+    content: url('icons8-chart-64.png');
+  }
+  > p {
+    color:$light_text_color;
+    margin-bottom: $spacer * 4;
+  }
+}
+.sec-6{
+  padding: $spacer*4 $spacer*3;
+  &::before {
+    content: url('icons8-letters-64.png');
+  }
+  > p {
+    color:$light_text_color;
+    margin-bottom: $spacer * 4;
+  }
+}
+.button-primary {
+  @include button($background_hover:$hover_color);
+}
+.button-primary > div {
+  position: relative;
+  z-index: 1;
+}
+    .pic-cont {
+    @include link;
+    }
+    // .end-link {
+    //   @include link;
+    // }
+   
+    .para {
+      @include paragraph;
+    }

@@ -1,0 +1,68 @@
+html , body {
+font-family: $font_family;
+font-size: 16px;
+overflow-x: hidden;
+}
+h1 {
+    font-size: 46px;
+    font-weight:700;
+    text-transform: capitalize;
+        line-height: 1.2;
+        margin-bottom: $spacer *3;
+    
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+}
+h3 > a {
+    color: #00044A;
+    font-size: $spacer * 3;
+    font-weight: 700;
+    display: block;
+    text-transform: capitalize;
+}
+
+h3 {
+    margin-bottom: $spacer *2;
+    margin-top: $spacer *2;
+}
+
+// @keyframes rotate {
+//     from {
+//         transform: scaleX(0);
+//     }
+//     to{
+//         transform: scaleX(10px);
+//     }
+//   }
+//   .pic-cont > div > h3:hover {
+
+//     color:$primary_color;
+//   }
+//   .sec-1 > h3 > a {
+//     color:$primary_color;
+// }
+
+article > a {
+    color:#000DFF;
+}
+article {
+    background-color:rgba(0,13,255,0.06); 
+    border-radius: 5px;
+    height: $spacer * 4;
+    width: $spacer * 15;
+    padding: $spacer $spcaer;
+    display: flex;
+    align-items: center;
+}
+  .pic-cont > div {
+    background: #ffff;
+    border-radius: 10px;
+    padding: 30px 28px 28px 28px;
+  }
+  .div-2 {
+    min-height: 400px;
+  }
